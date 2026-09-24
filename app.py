@@ -19,7 +19,7 @@ class Handler(BaseHTTPRequestHandler):
         print("%s - %s" % (self.address_string(), format % args))
 
 if __name__ == "__main__":
-    port = 8080
+    port = 8081
     server = HTTPServer(("0.0.0.0", port), Handler)
     print(f"listening on {port}")
     server.serve_forever()
